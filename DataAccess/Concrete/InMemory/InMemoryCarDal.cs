@@ -47,7 +47,9 @@ namespace DataAccess.Concrete.InMemory
             throw new NotImplementedException();
         }
 
-        public Car GetByFilter(Expression<Func<Car, bool>> filter)
+
+
+        public Car GetByFilter(int id)
         {
             throw new NotImplementedException();
         }

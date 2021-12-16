@@ -24,12 +24,12 @@ namespace Business.Concrete
 
         public Car GetCarsByBrandId(int Id)
         {
-            throw new NotImplementedException();
+            return _carDal.GetByFilter(Id);
         }
 
         public Car GetCarsByColorId(int Id)
         {
-            throw new NotImplementedException();
+            return _carDal.GetByFilter(Id);
         }
     }
 }

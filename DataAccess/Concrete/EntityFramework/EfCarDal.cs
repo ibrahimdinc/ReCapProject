@@ -57,7 +57,10 @@ namespace DataAccess.Concrete.EntityFramework
             using (ReCapContext context = new ReCapContext())
             {
                 return context.Set<Car>().SingleOrDefault(p => p.CarId == id);
+
             }
+        
+            
         }
 
         

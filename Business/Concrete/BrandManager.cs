@@ -24,12 +24,14 @@ namespace Business.Concrete
 
         public Brand GetCarsByBrandId(int Id)
         {
+
             return _brandDal.GetByFilter(Id);
+
         }
 
         public Brand GetCarsByColorId(int Id)
         {
-            throw new NotImplementedException();
+            return _brandDal.GetByFilter(Id);
         }
     }
 }

@@ -48,11 +48,13 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+
         public Color GetByFilter(int id)
         {
             using (ReCapContext context = new ReCapContext())
             {
                 return context.Set<Color>().SingleOrDefault(p => p.Id == id);
+
             }
         }
     }
