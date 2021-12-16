@@ -29,9 +29,7 @@ namespace Business.Concrete
 
         public Color GetCarsByColorId(int Id)
         {
-
             return _colorDal.GetByFilter(Id);
-
         }
     }
 }
