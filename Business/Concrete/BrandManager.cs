@@ -24,7 +24,11 @@ namespace Business.Concrete
 
         public Brand GetCarsByBrandId(int Id)
         {
+<<<<<<< HEAD
             return _brandDal.GetByFilter(Id);
+=======
+            return _brandDal.GetByFilter(p => p.Id == Id);
+>>>>>>> 20102bcd03f35ef74cdefb3dd9f229df807c072b
         }
 
         public Brand GetCarsByColorId(int Id)

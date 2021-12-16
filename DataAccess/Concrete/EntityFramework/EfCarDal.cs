@@ -52,11 +52,19 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+<<<<<<< HEAD
         public Car GetByFilter(int id)
         {
             using (ReCapContext context = new ReCapContext())
             {
                 return context.Set<Car>().SingleOrDefault(p => p.CarId == id);
+=======
+        public Car GetByFilter(Expression<Func<Car, bool>> filter)
+        {
+            using (ReCapContext context = new ReCapContext())
+            {
+                return context.Set<Car>().SingleOrDefault(filter);
+>>>>>>> 20102bcd03f35ef74cdefb3dd9f229df807c072b
             }
         }
 

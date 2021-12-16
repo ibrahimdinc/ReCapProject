@@ -49,11 +49,19 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+<<<<<<< HEAD
         public Brand GetByFilter(int id)
         {
             using (ReCapContext context = new ReCapContext())
             {
                 return context.Set<Brand>().SingleOrDefault(p=>p.Id==id);
+=======
+        public Brand GetByFilter(Expression<Func<Brand, bool>> filter)
+        {
+            using (ReCapContext context = new ReCapContext())
+            {
+                return context.Set<Brand>().SingleOrDefault(filter);
+>>>>>>> 20102bcd03f35ef74cdefb3dd9f229df807c072b
             }
         }
     }

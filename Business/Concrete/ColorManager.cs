@@ -29,7 +29,11 @@ namespace Business.Concrete
 
         public Color GetCarsByColorId(int Id)
         {
+<<<<<<< HEAD
             return _colorDal.GetByFilter(Id);
+=======
+            return _colorDal.GetByFilter(p=>p.Id == Id);
+>>>>>>> 20102bcd03f35ef74cdefb3dd9f229df807c072b
         }
     }
 }
