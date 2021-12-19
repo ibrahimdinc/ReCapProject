@@ -1,4 +1,4 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -9,8 +9,8 @@ namespace Business.Abstract
     public interface IServiceRepository<T>where T:IEntity,new()
     {
         List<T> GetAll(Expression<Func<T,bool>> filter=null);
-        T GetCarsByBrandId(int Id);
-        T GetCarsByColorId(int Id);
+        T GetCarsById(int Id);
+        
 
     }
 }

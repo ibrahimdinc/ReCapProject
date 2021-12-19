@@ -22,14 +22,10 @@ namespace Business.Concrete
             return _colorDal.GetAll() ;
         }
 
-        public Color GetCarsByBrandId(int Id)
+        public Color GetCarsById(int Id)
         {
-            return _colorDal.GetByFilter(Id);
+            return _colorDal.GetByFilter(c=>c.Id==Id);
         }
 
-        public Color GetCarsByColorId(int Id)
-        {
-            return _colorDal.GetByFilter(Id);
-        }
     }
 }
